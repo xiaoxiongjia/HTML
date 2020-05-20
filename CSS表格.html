@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS表格</title>
+		<style>
+			table{
+				width: 100%;
+				border-collapse: collapse;
+			}
+			table,th,td{
+				/*CSS表格边框*/
+				height: 50px;
+				text-align: right;
+				/*右对齐*/
+				vertical-align: bottom;
+				/*底部对齐*/
+				padding: 15px;
+				/*表格内边距*/
+				border: 1px solid blue;
+				/*表格边框颜色*/
+			}
+			th{
+				background-color: green;
+				color: white;
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<tr>
+				<th>项目</th>
+				<th>申请人</th>
+				<th>申请时间</th>
+			</tr>
+			<tr>
+				<td>吃饭</td>
+				<td>熊建</td>
+				<td>4.26</td>
+			</tr>
+			<tr>
+				<td>学习</td>
+				<td>熊建</td>
+				<td>4.26</td>
+			</tr>
+		</table>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS轮廓</title>
+		<style>
+			p {
+				border: red solid thin;
+				/*outline-color: #00FF00;*/
+				/*设置轮廓的颜色*/
+				/*outline-style: dotted;*/
+			}
+			
+			/*设置轮廓样式*/
+			p.dotted {outline-style: dotted}
+			p.dashed {outline-style: dashed}
+			p.solid {outline-style: solid}
+			p.double {outline-style: double}
+			p.groove {outline-style: groove}	
+			p.ridge {outline-style: ridge}	
+			p.inset {outline-style: inset}
+			p.outset {outline-style: outset}
+			
+			p.two{
+				border: red solid thin;
+				outline-style: dotted;
+				outline-width: 13px;
+				/*设置轮廓宽度*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<br />
+		<br />
+		<p class="two">这里设置了宽度</p>
+		<br />
+		<br />
+		<p><b>注意：</b>Internet Explorer 8 （以及更高版本） 才支持 outline 属性。</p>
+		<p class="dotted">A dotted outline</p>
+		<p class="dashed">A dashed outline</p>
+		<p class="solid">A solid outline</p>
+		<p class="double">A double outline</p>
+		<p class="groove">A groove outline</p>
+		<p class="ridge">A ridge outline</p>
+		<p class="inset">An inset outline</p>
+		<p class="outset">An outset outline</p>
+	</body>
+
+</html>

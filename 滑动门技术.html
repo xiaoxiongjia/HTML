@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>滑动门技术</title>
+    <style>
+    	
+    	*{
+    		
+			
+    	}
+        .head{
+				height: 75px;
+				overflow: hidden;
+				
+			}
+        .nav li {
+            float: left;
+            list-style: none;
+        }
+        .nav li img{
+        	height: 33px;
+            line-height: 33px;
+            margin-left: 300px;
+            
+        }
+
+        .nav a {
+            /*1. a 左边放 左圆角   但是文字需要往右走 15px*/
+            height: 33px;
+            line-height: 33px;
+            color: #fff;
+            text-decoration: none;
+            background: url(img/to.png) no-repeat left;
+            display: inline-block;
+            padding-left: 15px;
+        }
+
+        .nav span {
+            /* 2. span 右边放右圆角 但是文字需要往左走 15px，*/
+            background: url(img/to.png) no-repeat right;
+            display: inline-block;
+            height: 33px;
+            padding-right: 15px;
+            
+
+        }
+
+        /*       凹下去， 第一个为左边，第二个为右边*/
+
+        .nav a:hover,
+        .nav a:hover span {
+            background-image: url(img/ao.png);
+        }
+        .intro{
+        	height: 424px;
+        	margin-bottom: 44px;
+        }
+        .intro h1{
+        	padding: 45px 0 3px;
+        }
+        .intro p{
+        	font-size: 16px;
+        	color: #979797;
+        }
+        p{
+        	margin: .33em 0;
+        	display: block;
+        }
+        .intro a.btn_download {
+    		display: block;
+    		width: 224px;
+   			height: 64px;
+   			margin-top: 15px;
+    		background: #348903;
+    		position: relative;
+    		color: #fff;
+    		font-size: 16px;
+    		font-weight: 700;
+    		text-align: center;
+    		line-height: 64px;
+    		}
+    	.left{
+    		float: left;
+    		}
+    	.intro a.btn_download b {
+    		display: block;
+    		float: left;
+    		top: 0;
+    		left: 0;
+    		width: 224px;
+    		height: 64px;
+    		background: url(img/按钮.png) no-repeat;
+    		position: absolute;
+			}
+       
+    </style>
+</head>
+
+<body>
+    <div class="head" style="background-color: #000000;">
+    	<ul class="nav">
+    	<li>	
+    		<img src="img/wx.png"/>
+    	</li>
+        <li>
+            <a href="滑动门技术.html">
+                <span>首页</span>
+		      </a>
+        </li>
+        <li>
+            <a href="https://kf.qq.com/product/weixin.html">
+		      		<span>帮助与反馈</span>
+		      </a>
+        </li>
+        <li>
+            <a href="https://mp.weixin.qq.com/">
+		      		<span>公众平台</span>
+		      </a>    
+        </li>
+        <li>
+            <a href="https://open.weixin.qq.com/">
+		      		<span>开发平台</span>
+		      </a>
+        </li>
+        <li>
+            <a href="https://pay.weixin.qq.com/">
+		      		<span>微信支付</span>
+		      </a>
+		      
+        </li>
+        <li>
+            <a href="https://ad.weixin.qq.com/">
+		      		<span>微信广告</span>
+		      </a>
+		      
+        </li>
+        <li>
+            <a href="https://work.weixin.qq.com/">
+		      		<span>企业微信</span>
+		      </a>
+		      
+        </li>
+         <li>
+            <a href="https://sticker.weixin.qq.com/">
+		      		<span>表情开发平台</span>
+		      </a>
+		      
+        </li>
+        <li>
+            <a href="https://wx.qq.com/">
+		      		<span>微信网页版</span>
+		      </a>
+		      
+        </li>
+    </ul>
+    </div>
+    <div class="intro" style="background-color: ; margin: 0; padding: 0;">
+    	<h1 style="background-image: none; font-size: 26px; font-weight: 400; position: static;">微信，是一个生活方式</h1>
+    	<p>超过十亿人使用的手机应用</p>
+    	<p>支持发送语音短信、视频、图片和文字</p>
+    	<p>可以群聊，仅耗少量流量，适合大部分智能手机</p>
+    	<a style="margin-top: 15px;" href="https://weixin.qq.com/cgi-bin/readtemplate?uin=&stype=&promote=&fr=&lang=zh_CN&ADTAG=&check=false&nav=download&t=weixin_download_list&loc=readtemplate,weixin,body,6 " class="btn_download left">
+			"免费下载"
+			<b></b>	    
+    	</a>
+    
+    </div>
+</body>
+</html>

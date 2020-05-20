@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>微信</title>
+		<style>
+			.head{
+				height: 75px;
+				overflow: hidden;
+			}
+			.head.logo{
+				float: left;
+				margin-top: 14px;
+				height: 44px;
+			}
+			img{
+				border: 0;
+			}
+			a{
+				text-decoration: none;
+				color: #008000;
+				cursor: pointer;
+			}
+			div{
+				display: block;
+			}
+			.nav li {
+            float: left;
+            list-style: none;
+        }
+        .nav a {
+            /*1. a 左边放 左圆角   但是文字需要往右走 15px*/
+            height: 33px;
+            line-height: 33px;
+            color: #fff;
+            text-decoration: none;
+            background: url(img/to.png) no-repeat left;
+            display: inline-block;
+            padding-left: 15px;
+        }
+
+        .nav span {
+            /* 2. span 右边放右圆角 但是文字需要往左走 15px，*/
+            background: url(img/to.png) no-repeat right;
+            display: inline-block;
+            height: 33px;
+            padding-right: 15px;
+        }
+
+        /*       凹下去， 第一个为左边，第二个为右边*/
+
+        .nav a:hover,
+        .nav a:hover span {
+            background-image: url(img/ao.png);
+        }
+		</style>
+	</head>
+	<body>
+		<div class="head" style="background-color: #000000;">
+			<a href="#">
+				<img class="logo" src="img/wx.png" alt="微信"/>
+			</a>
+			<ul class="nav">
+				<li>
+					<a href="#">
+						<span>首页</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
